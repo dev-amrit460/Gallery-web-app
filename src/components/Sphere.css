@@ -1,0 +1,38 @@
+.box{
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    transform-style: preserve-3d;
+    animation: rotate 25s linear infinite;
+}
+.box:hover{
+    animation-play-state: paused;
+}
+@keyframes rotate{
+    0%{
+      transform: perspective(62.5rem) rotateX(0deg);
+    }
+    100%{
+        transform: perspective(62.5rem) rotateX(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateX(calc(var(--i)*24deg)) translateZ(29rem);
+    box-shadow: 1.25rem -0.3125rem 3.125rem rgba(255,255,255,0.1);
+}
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} */
+body{
+    background: url("../images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btncontainer{
+    height:92vh;
+    flex-direction: column;
+}
+#btn{
+font-size: x-large;
+width:11.25rem;
+border-top: solid 0.125rem #fff;
+border-bottom: solid 0.125rem #fff;
+color: #fff;
+height: 3.75rem;
+text-decoration: none;
+text-transform: uppercase;
+line-height: 3.75rem;
+letter-spacing: 0.125rem;
+font-weight: bold;
+margin: 1.25rem;
+transition: 0.5s;
+text-align: center;
+border-radius: 0.85rem;
+box-shadow: 20px 20px 50x rgba(0, 0, 0, 0.5);
+font-family: 'Baloo 2', cursive;
+}
+#btn:hover{
+    background: lightblue url("../images/pixel.png");
+    transition-delay: 0.6s;
+    background-size: 11.25rem;
+    animation: animate 0.6s steps(8) forwards;
+    color: #000;
+}
+#btn:nth-child(2):hover{
+    background: lightgreen url("../images/pixel1.png");
+    transition-delay: 0.6s;
+    background-size: 11.25rem;
+    animation: animate 0.6s steps(8) forwards;
+    color: #000;
+}
+#btn:nth-child(3):hover{
+    background:#ec0b36 url("../images/pixel2.png");
+    transition-delay: 0.6s;
+    background-size: 11.25rem;
+    animation: animate 0.6s steps(8) forwards;
+    color: #000;
+}
+@keyframes animate {
+    0%{
+        background-position-y: 0;
+    }
+    100%{
+        background-position-y:-30rem;
+    }
+}
+#heading{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    height: 8vh;
+    border-Right:solid 2px white;
+    border-Left:solid 2px white;
+    padding-bottom: 0.5rem;
+    font-size: xx-large;
+    padding-top: 0.5rem;
+}
+.masonry-grid {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: flex;
+    width: auto;
+  }
+  .masonry-grid_column {
+    padding-left: 1rem; /* gutter size */
+    padding-right: 1rem;
+    background-clip: padding-box;
+  }
+  
+  /* Style your items */
+  .masonry-grid_column > div {
+    margin: 1rem auto;
+  }
+  #heading2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Baloo 2', cursive;
+    font-size: xx-large;
+    height: 8vh;
+  }
+  .pic{
+    filter: brightness(0.5) grayscale(100);
+  }
+  .pic:hover{
+    filter: brightness(1) grayscale(0);
+  }
+  

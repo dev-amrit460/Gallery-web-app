@@ -12,10 +12,7 @@ follow this link https://www.gatsbyjs.com/docs/tutorial/
 5) CSS styling
 
 # Compatibility
-Laptop/PC
-Tabs
-Smart phone
-Bootstrap grid option (https://getbootstrap.com/docs/4.0/layout/grid/) is used for adjusting number of images across different screen resolution.
+Laptop/PC, Tabs, Smart phone - Bootstrap grid option (https://getbootstrap.com/docs/4.0/layout/grid/) is used for adjusting number of images across different screen resolution.
 
 # Hosted on firebase
 link : https://gallery-85bca.web.app/

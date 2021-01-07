@@ -9,7 +9,7 @@ const Btn = () => {
       <div className="d-flex justify-content-center align-items-center" id="btncontainer">
       
       <Link to="/Normal/" id="btn">Normal</Link>
-      <Link to="/Swipe/" id="btn">Swiper</Link>
+      <Link to="/Swiper/" id="btn">Swiper</Link>
       <Link to="/Round/" id="btn">Sphere</Link>
       </div>
       </>

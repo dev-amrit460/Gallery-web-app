@@ -9,7 +9,7 @@ const Rotate = (props) => {
     <>
     
 
-<span style={style} ><img src={props.link} className="img-fluid rounded-lg" alt=""></img></span>
+<span style={style} ><img src={props.url} className="img-fluid rounded-lg" alt=""></img></span>
 
 </>
   );

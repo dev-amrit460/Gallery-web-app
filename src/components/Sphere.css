@@ -6,7 +6,7 @@
     animation: rotate 25s linear infinite;
 }
 .box:hover{
-    animation-play-state: paused;
+   animation-play-state: paused;
 }
 @keyframes rotate{
     0%{

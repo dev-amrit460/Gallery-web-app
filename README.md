@@ -14,5 +14,8 @@ follow this link https://www.gatsbyjs.com/docs/tutorial/
 # Compatibility
 Laptop/PC, Tabs, Smart phone - Bootstrap grid option (https://getbootstrap.com/docs/4.0/layout/grid/) is used for adjusting number of images across different screen resolution.
 
+# tips
+In reels view, just swipe up once and it will bring next image via API.
+
 # Hosted on firebase
 link : https://gallery-85bca.web.app/

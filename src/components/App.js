@@ -26,7 +26,7 @@ const App = () => {
 
   // these valuses are taken from bootstrap grid system
   const fitting = {
-    default: 4, 1200: 4, 992: 3, 768: 2, 576: 1,
+    default: 3, 1200: 3, 992: 2, 768: 2, 576: 1,
   }
 
   return (

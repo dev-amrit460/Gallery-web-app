@@ -6,10 +6,9 @@
     height: 100vh;
     overflow:auto;
     scroll-snap-type: y mandatory;
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(-45deg, #29323c, #232526,#485563, #29323c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(-45deg, #29323c, #232526,#485563, #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #353839;  /* fallback for old browsers */
+    background: -webkit-radial-gradient(circle,#000000, #0a0a0a,#0f0f0f,#080808, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: radial-gradient(circle,#000000, #0a0a0a,#0f0f0f,#080808, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     scrollbar-width: none;
 }
 .reel{
@@ -21,10 +20,11 @@
     scroll-snap-align: start;
 }
 .reel img{
-    max-height: 100vh;
+    height: auto;
+    max-width: 100%;
 }
 .reel img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: 1s ease-in-out;
 }
 .parent::-webkit-scrollbar{

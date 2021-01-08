@@ -2,7 +2,7 @@ import React from 'react';
 import "./Sphere.css"
 
 const Rotate = (props) => {
-  
+  console.log(props.id)
  var style={"--i":props.id};
 
   return (

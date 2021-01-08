@@ -17,8 +17,9 @@ axios
       <>
 {photos.map(photo =>(
  
-  <Rotate url={photo.urls.small} id={++count}/>
+  <Rotate url={photo.urls.small} id={++count} key={photo.id}/>
 ))}
+
       </>
     );
   }

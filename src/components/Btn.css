@@ -5,7 +5,7 @@
     box-sizing: border-box;
 } */
 body{
-    background: url("../images/bg.jpg");
+    
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -85,8 +85,8 @@ font-family: 'Baloo 2', cursive;
     width: auto;
   }
   .masonry-grid_column {
-    padding-left: 1rem; /* gutter size */
-    padding-right: 1rem;
+    padding-left: 0.5rem; /* gutter size */
+    padding-right: 0.5rem;
     background-clip: padding-box;
   }
   
@@ -111,4 +111,19 @@ font-family: 'Baloo 2', cursive;
     filter: brightness(1) grayscale(0);
     transform: scale(1.5);
   }
-  
+
+  @media (min-width: 1025px) {
+    body {
+	    background-image: url("../images/bg.jpg");
+   }
+}
+@media (max-width: 480px) {
+  body {
+      background-image: url("../images/mobile.jpg");
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+      background-image: url("../images/tab.jpg");
+  }
+}

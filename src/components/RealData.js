@@ -5,14 +5,20 @@ import Reels from "./Reels";
 const ReelData = () => {
 
   const [images, setImages] = useState([]);
-  useEffect(() => {
-    const key = "eWYa4Jep0IA9I-aHGm9UK5UaBVLVzX1Npzs6WjX3dcc";
+  
+  useEffect(()=>{
+    loadImage();
+  },[])
+
+  const loadImage= () => {
+    const key = "WuNnKZ04B1kDQXRQoh3GpYpNO4TbyiCU1p1RlnqLVJ0";
     const api = "https://api.unsplash.com";
     axios
       .get(`${api}/photos/random?client_id=${key}&&count=30`)
       .then(res => setImages([...images, ...res.data]));
 
-  }, [])
+  }
+
   return (
     <>
 

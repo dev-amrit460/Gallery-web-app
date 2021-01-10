@@ -2,11 +2,11 @@ import React from 'react';
 import "./Reels.css"
 
 const Reels = (props) => {
-  //console.log(props.id)
+  //console.log(props)
   return (
 <>
 
-<div className="reel"><img src={props.url} className="img-fluid rounded-lg img-thumbnail" alt=""></img>
+<div className="reel"><span id="imageCheck"><img src={props.url} className="img-fluid" alt=""></img></span>
       <div id="heading4">
         <span>Reels View</span>
       </div></div>

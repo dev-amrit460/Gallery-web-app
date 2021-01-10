@@ -19,6 +19,13 @@
     place-items: center;
     scroll-snap-align: start;
 }
+#imageCheck{
+    overflow: hidden;
+    border: 0.15rem solid white;
+    border-radius: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
 .reel img{
     height: auto;
     max-width: 100%;

@@ -37,6 +37,7 @@ text-align: center;
 border-radius: 0.85rem;
 box-shadow: 20px 20px 50x rgba(0, 0, 0, 0.5);
 font-family: 'Baloo 2', cursive;
+animation: neon .1s ease-in-out infinite alternate;
 }
 #btn:hover{
     background: lightblue url("../images/pixel.png");
@@ -72,11 +73,36 @@ font-family: 'Baloo 2', cursive;
     text-align: center;
     font-family: 'Baloo 2', cursive;
     height: 8vh;
-    border-Right:solid 2px white;
-    border-Left:solid 2px white;
-    padding-bottom: 0.5rem;
+    /* border-Right:solid 0.125rem #c6e2ff;
+    border-Left:solid 0.125rem #c6e2ff; */
+    border-bottom:solid 0.125rem #c6e2ff;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    padding-bottom: 0.2rem;
     font-size: xx-large;
-    padding-top: 0.5rem;
+    animation: neon .1s ease-in-out infinite alternate;
+}
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 0.5rem rgba(202,228,225,0.92),
+    0 0 2rem rgba(202,228,225,0.34),
+    0 0 0.8rem rgba(30,132,242,0.52),
+    0 0 2rem rgba(30,132,242,0.92),
+    0 0 2.5rem rgba(30,132,242,0.78),
+    0 0 3.8rem rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 0.5rem rgba(202,228,225,0.98),
+    0 0 2rem rgba(202,228,225,0.42),
+    0 0 0.8rem rgba(30,132,242,0.58),
+    0 0 2rem rgba(30,132,242,0.84),
+    0 0 2.5rem rgba(30,132,242,0.88),
+    0 0 3.8rem rgba(30,132,242,1);
+  }
 }
 .masonry-grid {
     display: -webkit-box; /* Not needed if autoprefixing */
@@ -102,6 +128,7 @@ font-family: 'Baloo 2', cursive;
     font-family: 'Baloo 2', cursive;
     font-size: xx-large;
     height: 8vh;
+    animation: neon .1s ease-in-out infinite alternate;
   }
   .pic{
     filter: brightness(0.5) grayscale(100);

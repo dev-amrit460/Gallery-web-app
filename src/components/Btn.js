@@ -5,7 +5,7 @@ import "./Btn.css"
 const Btn = () => {
     return (
       <>
-      <center><div id="heading">Gallery App</div></center>
+      <center><span id="heading">Gallery App</span></center>
       <div className="d-flex justify-content-center align-items-center" id="btncontainer">
       
       <Link to="/Normal/" id="btn">Normal</Link>

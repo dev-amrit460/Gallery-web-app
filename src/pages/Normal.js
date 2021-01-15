@@ -2,12 +2,12 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Main from "../components/Main"
+import App from "../components/App"
 
 const Normal = () => (
   <Layout>
     <SEO title="Home" />
-     <Main/>
+     <App/>
 
   </Layout>
 )

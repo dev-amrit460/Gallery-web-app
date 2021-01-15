@@ -37,46 +37,33 @@
 .parent::-webkit-scrollbar{
     display: none;
 }
-
+#heading4{
+    position: absolute;
+    color: #fff;
+    font-family: 'Baloo 2', cursive;
+    font-size: xx-large;
+    text-shadow: 0.185rem 0.185rem #000000;
+    transform: translate(50%,50%);
+    animation: neon .1s ease-in-out infinite alternate;
+}
 @media (min-width: 1025px) {
     #heading4{
-        position: absolute;
-        color: #fff;
-        font-family: 'Baloo 2', cursive;
-        font-size: xx-large;
         top: 50%;
         left:0%;
-        text-shadow: 0.185rem 0.185rem #000000;
-        transform: translate(50%,50%);
         transform: rotate(-90deg);
-        animation: neon .9s ease-in-out infinite alternate;
     } 
 }
 @media (max-width: 480px) {
     #heading4{
-        position: absolute;
-        color: #fff;
-        font-family: 'Baloo 2', cursive;
-        font-size: xx-large;
         top: 0%;
         left:10%;
-        text-shadow: 0.185rem 0.185rem #000000;
-        transform: translate(50%,50%);
-        animation: neon .9s ease-in-out infinite alternate;
     }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
     #heading4{
-        position: absolute;
-        color: #fff;
-        font-family: 'Baloo 2', cursive;
-        font-size: xx-large;
         top: 50%;
         left:0%;
-        text-shadow: 0.185rem 0.185rem #000000;
-        transform: translate(50%,50%);
         transform: rotate(-90deg);
-        animation: neon .1s ease-in-out infinite alternate;
     }
 }

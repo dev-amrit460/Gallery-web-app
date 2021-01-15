@@ -10,7 +10,7 @@ const Round = () => (
     <SEO title="Home" />
     
 
-  <div className="d-flex justify-content-center align-items-center" id="heading3"> 
+  <div className="space d-flex justify-content-center align-items-center" id="heading3"> 
       
     <div className="box ">
     <Provider/>

@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
-/* *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-} */
 body{
-    
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,7 +10,7 @@ body{
     align-items: center;
 }
 #btncontainer{
-    height:92vh;
+    display: flex;
     flex-direction: column;
 }
 #btn{
@@ -35,7 +29,7 @@ margin: 1.25rem;
 transition: 0.5s;
 text-align: center;
 border-radius: 0.85rem;
-box-shadow: 20px 20px 50x rgba(0, 0, 0, 0.5);
+box-shadow: 1.25rem 1.25rem 3.125rem rgba(0, 0, 0, 0.5);
 font-family: 'Baloo 2', cursive;
 animation: neon .1s ease-in-out infinite alternate;
 }
@@ -68,19 +62,19 @@ animation: neon .1s ease-in-out infinite alternate;
         background-position-y:-30rem;
     }
 }
+#wrap{
+  position: absolute;
+  top: 0;
+  left:0;
+  right: 0;
+}
 #heading{
     color: white;
-    text-align: center;
     font-family: 'Baloo 2', cursive;
-    height: 8vh;
-    /* border-Right:solid 0.125rem #c6e2ff;
-    border-Left:solid 0.125rem #c6e2ff; */
     border-bottom:solid 0.125rem #c6e2ff;
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-    padding-bottom: 0.2rem;
+    padding: 0rem 0.6rem 0.2rem 0.6rem;
     font-size: xx-large;
     animation: neon .1s ease-in-out infinite alternate;
 }
@@ -105,18 +99,16 @@ animation: neon .1s ease-in-out infinite alternate;
   }
 }
 .masonry-grid {
-    display: -webkit-box; /* Not needed if autoprefixing */
-    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: auto;
   }
   .masonry-grid_column {
-    padding-left: 0.5rem; /* gutter size */
+    padding-left: 0.5rem;
     padding-right: 0.5rem;
     background-clip: padding-box;
   }
-  
-  /* Style your items */
   .masonry-grid_column > div {
     margin: 1rem auto;
   }
@@ -127,11 +119,10 @@ animation: neon .1s ease-in-out infinite alternate;
     color: #fff;
     font-family: 'Baloo 2', cursive;
     font-size: xx-large;
-    height: 8vh;
     animation: neon .1s ease-in-out infinite alternate;
   }
   .pic{
-    filter: brightness(0.5) grayscale(100);
+    filter: brightness(0.7) grayscale(100);
     transition: 1s ease-in-out;
   }
   .pic:hover{

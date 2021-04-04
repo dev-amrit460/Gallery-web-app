@@ -32,7 +32,7 @@ const App = () => {
   return (
     <div className="container-fluid">
       <div id="heading2">
-        <span>Google Photo View</span>
+        <span>Infinite View</span>
       </div>
       <InfiniteScroll
         pageStart={0}

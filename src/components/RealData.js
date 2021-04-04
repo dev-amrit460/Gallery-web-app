@@ -11,22 +11,27 @@ const ReelData = () => {
   },[])
 
   const loadImage= () => {
-    const key = "WuNnKZ04B1kDQXRQoh3GpYpNO4TbyiCU1p1RlnqLVJ0";
-    const api = "https://api.unsplash.com";
+    const key = "18005070-db80de985224bc25be5b2d215";
+    const api = "https://pixabay.com/api/";
     axios
-      .get(`${api}/photos/random?client_id=${key}&&count=30`)
-      .then(res => setImages([...images, ...res.data]));
+      .get(`${api}?key=${key}&editors_choice=true&q=beauty&per_page=200&safesearch=true`)
+      .then(res => setImages([...images, ...res.data.hits]));
 
   }
-
+// console.log(images);
+function photo(val,index){
+  return(
+    <Reels url={val} key={index} />
+  )
+}
   return (
     <>
 
       <div className="parent">
-        {images.map(photo => (
-
-          <Reels url={photo.urls.small} key={photo.id} />
-        ))}
+      <div id="heading4">
+        <span>Reels View</span>
+      </div>
+        {images.map(photo)}
       </div>
       
     </>

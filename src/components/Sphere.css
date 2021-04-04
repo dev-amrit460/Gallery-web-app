@@ -1,7 +1,7 @@
 .box{
     position: relative;
-    width: 12rem;
-    height: 12rem;
+    width: 11rem;
+    height: 11rem;
     transform-style: preserve-3d;
     animation: rotate 25s linear infinite;
 }
@@ -10,10 +10,10 @@
 }
 @keyframes rotate{
     0%{
-      transform: perspective(62.5rem) rotateX(0deg);
+      transform: perspective(75rem) rotateX(0deg);
     }
     100%{
-        transform: perspective(62.5rem) rotateX(360deg);
+        transform: perspective(75rem) rotateX(360deg);
     }
 }
 .box span{

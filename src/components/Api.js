@@ -11,6 +11,7 @@ const Api = axios.create({
     key: "18005070-db80de985224bc25be5b2d215",
     safesearch: true,
     editors_choice: true,
+    order:"latest",
   },
 });
 

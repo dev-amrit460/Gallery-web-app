@@ -13,7 +13,7 @@ Link: https://gallery-85bca.web.app/
   <li>Image Search and Download</li>
   <li>Fully responsive</li>
   <li>Uses various Api to get images</li>
-  <li>Various Views Implemented using CSS</li>
+  <li>Various Views Implemented using CSS & JS</li>
 </ul>
 <h3> Main screen(Desktop)</h3>
 <p>

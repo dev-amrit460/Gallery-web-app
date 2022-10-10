@@ -44,7 +44,7 @@ const Find = () => {
     function photo(val, index) {
         return (
             <div><img className="img-fluid" src={val.webformatURL} key={index} alt="img" />
-            <a onClick={() => download(val.largeImageURL)} id="download">Download</a></div>
+            <button onClick={() => download(val.largeImageURL)} id="download">Download</button></div>
             
         )
     }

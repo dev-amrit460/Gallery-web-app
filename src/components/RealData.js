@@ -14,7 +14,7 @@ const ReelData = () => {
     const key = "18005070-db80de985224bc25be5b2d215";
     const api = "https://pixabay.com/api/";
     axios
-      .get(`${api}?key=${key}&editors_choice=true&q=beauty&per_page=200&safesearch=true`)
+      .get(`${api}?key=${key}&editors_choice=true&q=woman&per_page=200&safesearch=False`)
       .then(res => setImages([...images, ...res.data.hits]));
 
   }

@@ -29,7 +29,7 @@ const Reels = (props) => {
 <>
 
 <div className="reel"><span id="imageCheck"><img src={props.url.webformatURL} className="img-fluid" alt=""></img>
-<a onClick={() => download(props.url.largeImageURL)} id="download">Download</a></span>
+<button onClick={() => download(props.url.largeImageURL)} id="download">Download</button></span>
 </div>
 
 </>

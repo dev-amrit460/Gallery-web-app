@@ -3,7 +3,7 @@
     width: 11rem;
     height: 11rem;
     transform-style: preserve-3d;
-    animation: rotate 25s linear infinite;
+    animation: rotate 50s linear infinite;
 }
 .box:hover{
    animation-play-state: paused;

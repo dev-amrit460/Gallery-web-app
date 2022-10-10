@@ -29,7 +29,7 @@ const Image = (props) => {
       <div className="col-md-12 px-0">
         <div className="rounded-lg overflow-hidden" id="maindown">
           <img src={props.webformatURL} className="pic img-fluid" alt={props.tags}></img>
-          <a onClick={() => download(props.largeImageURL)} id="download">Download</a>
+          <button onClick={() => download(props.largeImageURL)} id="download">Download</button>
         </div>
       </div>
     </div>

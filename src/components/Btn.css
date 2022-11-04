@@ -21,22 +21,22 @@ body{
     justify-content: center;
 }
 #btn{
-font-size: x-large;
-width:11.25rem;
-border-top: solid 0.125rem #fff;
-border-bottom: solid 0.125rem #fff;
+font-size: large;
+width:9rem;
+border-top: solid 0.125rem red;
+border-bottom: solid 0.125rem red;
 color: #fff;
-height: 3.75rem;
+height: 3rem;
 text-decoration: none;
 text-transform: uppercase;
-line-height: 3.75rem;
-letter-spacing: 0.125rem;
+line-height: 3rem;
+letter-spacing: 0.1rem;
 font-weight: bold;
 margin: 0.5rem;
 transition: 0.5s;
 text-align: center;
 border-radius: 0.85rem;
-box-shadow: 1.25rem 1.25rem 3.125rem rgba(0, 0, 0, 0.5);
+box-shadow: -0.75rem -0.75rem 1rem rgba(0, 0, 0, 0.8);
 font-family: 'Nunito', sans-serif;
 animation: neon .1s ease-in-out infinite alternate;
 }
@@ -62,7 +62,8 @@ animation: neon .1s ease-in-out infinite alternate;
     left: 50%;
     transform: translateX(-50%);
     font-family: 'Nunito', sans-serif;
-    border-bottom:solid 0.125rem #c6e2ff;
+    /* border-bottom:solid 0.125rem #c6e2ff; */
+    border-bottom:solid 0.125rem red;
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
     padding: 0rem 0.6rem 0.2rem 0.6rem;

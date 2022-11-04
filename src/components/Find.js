@@ -52,7 +52,7 @@ const Find = () => {
         <>
             <div className="App1">
                 <div id="mydiv1">
-                    <input style={{ width: "75%" }} type="text" value={inputs} onChange={(e) => setInputs(e.target.value)} placeholder="Search Image" />
+                    <input style={{ width: "90%" }} type="text" value={inputs} onChange={(e) => setInputs(e.target.value)} placeholder="Search Image" />
                     <button style={{ marginLeft: "1rem" }} className="btn btn-danger" onClick={() => loadphoto()}>Submit</button>
                 </div>
                 {photos.length == 0 ? (<div style={{ color: "white", position:"absolute",top:"50%", right:"50%",transform:"translate(50%,-50%)"}}>Search Above ^</div>) : (<Masonry

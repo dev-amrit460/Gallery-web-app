@@ -70,9 +70,10 @@
 }
 .App1{
 display: flex;
-justify-content: center;
-flex-direction: row;
-flex-wrap: wrap;
+justify-content: flex-start;
+align-items: center;
+flex-direction: column;
+/* flex-wrap: wrap; */
 width:100vw;
 min-height: 100vh;
 background-color:black;

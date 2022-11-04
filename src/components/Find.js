@@ -7,23 +7,23 @@ const Find = () => {
     const download = e => {
         // console.log(e);
         fetch(e, {
-          method: "GET",
-          headers: {}
+            method: "GET",
+            headers: {}
         })
-          .then(response => {
-            response.arrayBuffer().then(function(buffer) {
-              const url = window.URL.createObjectURL(new Blob([buffer]));
-              const link = document.createElement("a");
-              link.href = url;
-              link.setAttribute("download", "image.jpg"); //or any other extension
-              document.body.appendChild(link);
-              link.click();
+            .then(response => {
+                response.arrayBuffer().then(function (buffer) {
+                    const url = window.URL.createObjectURL(new Blob([buffer]));
+                    const link = document.createElement("a");
+                    link.href = url;
+                    link.setAttribute("download", "image.jpg"); //or any other extension
+                    document.body.appendChild(link);
+                    link.click();
+                });
+            })
+            .catch(err => {
+                console.log(err);
             });
-          })
-          .catch(err => {
-            console.log(err);
-          });
-      };
+    };
 
     const [photos, setPhotos] = useState([]);
     const [inputs, setInputs] = useState("");
@@ -44,8 +44,8 @@ const Find = () => {
     function photo(val, index) {
         return (
             <div><img className="img-fluid" src={val.webformatURL} key={index} alt="img" />
-            <button onClick={() => download(val.largeImageURL)} id="download">Download</button></div>
-            
+                <button onClick={() => download(val.largeImageURL)} id="download">Download</button></div>
+
         )
     }
     return (
@@ -53,16 +53,16 @@ const Find = () => {
             <div className="App1">
                 <div id="mydiv1">
                     <input style={{ width: "75%" }} type="text" value={inputs} onChange={(e) => setInputs(e.target.value)} placeholder="Search Image" />
-                    <button style={{marginLeft:"1rem"}} className="btn btn-danger" onClick={() => loadphoto()}>Submit</button>
+                    <button style={{ marginLeft: "1rem" }} className="btn btn-danger" onClick={() => loadphoto()}>Submit</button>
                 </div>
-
-                <Masonry
+                {photos.length == 0 ? (<div style={{ color: "white", position:"absolute",top:"50%", right:"50%",transform:"translate(50%,-50%)"}}>Search Above ^</div>) : (<Masonry
                     breakpointCols={fitting}
                     className="masonry-grid"
                     columnClassName="masonry-grid_column"
                 >
                     {photos.map(photo)}
-                </Masonry>
+                </Masonry>)}
+
 
             </div>
 

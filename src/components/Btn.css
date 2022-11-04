@@ -94,6 +94,7 @@ animation: neon .1s ease-in-out infinite alternate;
     display: -ms-flexbox;
     display: flex;
     width: auto;
+    height: 100vh;
   }
   .masonry-grid_column {
     padding-left: 0.5rem;

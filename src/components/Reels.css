@@ -92,10 +92,10 @@ background-color:black;
     z-index: 2;
 }
 input[type=text]{
-    border: 1px solid rgb(253, 186, 186);
+    border: 1px solid rgb(252, 218, 218);
     padding-left: 1rem;
     border-radius: 5px;
-    color: red;
+    color: #dc3545;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(253, 242, 242, 0.8);
 }
